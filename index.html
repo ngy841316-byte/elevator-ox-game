@@ -16,7 +16,7 @@
       <div class="subtitle">20문제 중 중복 없이 10문제 랜덤!</div>
       <button class="startBtn" onclick="startGame()">⭐ 시작하기 ⭐</button>
     </div>
-    <img class="char" src="images/start_characters.png" alt="엘리와 에스 캐릭터">
+    <img class="char" src="이미지/start_characters.png" alt="엘리와 에스 캐릭터">
   </section>
   <section id="game" class="game">
     <div class="top"><div class="pill" id="count">문제 1 / 10</div><div>⭐ <span id="scoreTop">0</span></div><button class="speaker" onclick="speakCurrent()">🔊</button></div>
@@ -58,7 +58,7 @@ function showQuestion(){
   document.getElementById('count').textContent=`문제 ${idx+1} / 10`;
   document.getElementById('scoreTop').textContent=score;
   document.getElementById('qText').textContent=q.text;
-  document.getElementById('qImg').src='images/'+q.image;
+  document.getElementById('qImg').src='이미지/'+q.image;
   document.getElementById('feedback').style.display='none';
 }
 function answer(choice){
